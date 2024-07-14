@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="All Test Suite">
+    <test verbose="2" preserve-order="true"
+          name="TestClass">
+        <parameter name="browser" value="chrome"/>
+        <classes>
+            <class name="com.qa.Pages.TestClass">
+                <methods>
+                    <include name="validateGoogleTitle"/>
+                    <include name="validateFBTitle"/>
+                    <include name="validateRedditTitle"/>
+                </methods>
+            </class>
+        </classes>
+    </test>
+</suite>
